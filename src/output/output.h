@@ -1,7 +1,7 @@
 #pragma once
 
-#include <../matrix/matrix.h>
-#include <../../include/config.h>
+#include "../matrix/matrix.h"
+#include "../../include/config.h"
 
 
 /**
