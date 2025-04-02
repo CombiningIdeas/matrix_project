@@ -28,7 +28,7 @@ int save_matrix_to_file(const Matrix* matrix, const char* filename) {
 
         //Если файл открылся, то продолжаем работу
         if (file) {
-            fprintf(file, "Number of rows: %d\n; Number of columns: %d\n;", matrix->rows, matrix->cols);
+            fprintf(file, "Number of rows: %d\nNumber of columns: %d\n", matrix->rows, matrix->cols);
 
             for (int row = 0; row < matrix->rows; row++) {
                 for (int col = 0; col < matrix->cols; col++) {
