@@ -1,4 +1,7 @@
 #include "matrix.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "../../include/config.h"
 
 
 //Создает новую матрицу с заданными размерами
