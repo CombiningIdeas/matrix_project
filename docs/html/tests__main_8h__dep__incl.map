@@ -1,0 +1,7 @@
+<map id="tests/tests_main.h" name="tests/tests_main.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для тестирования главной программы." alt="" coords="88,5,231,31"/>
+<area shape="rect" id="Node000002" href="$test__runner_8c.html" title="Основной файл для запуска всех тестов в проекте." alt="" coords="5,79,148,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,42,92,80,88,76,134,38"/>
+<area shape="rect" id="Node000003" href="$tests__main_8c.html" title=" " alt="" coords="173,79,314,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="185,38,231,76,228,80,182,42"/>
+</map>

@@ -1,0 +1,182 @@
+\doxysection{src/matrix/matrix.c File Reference}
+\hypertarget{matrix_8c}{}\label{matrix_8c}\index{src/matrix/matrix.c@{src/matrix/matrix.c}}
+{\ttfamily \#include "{}matrix.\+h"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include "{}../../include/config.\+h"{}}\newline
+Include dependency graph for matrix.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{matrix_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a68f143172ca254d74db01fecfd510436}{create\+\_\+matrix}} (int rows, int cols)
+\begin{DoxyCompactList}\small\item\em Создает новую матрицу с заданными размерами \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{matrix_8c_a3d02d88d9c14615366e3c61a6755339e}{free\+\_\+matrix}} (\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix)
+\begin{DoxyCompactList}\small\item\em Освобождает память, выделенную под матрицу \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a7faf574eeeec6da353ea06cafd08cd3c}{load\+\_\+matrix\+\_\+from\+\_\+file}} (const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Загружает матрицу из текстового файла \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a434254404b00b33c5d35dbfd0694e6d9}{copy\+\_\+matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}source)
+\begin{DoxyCompactList}\small\item\em Копирует матрицу \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a686c5488cbc4ff0282332e85330b5b4b}{add\+\_\+matrices}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}A, const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}B)
+\begin{DoxyCompactList}\small\item\em Складывает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a284692b924ed9435ebe878a822b16cef}{multiply\+\_\+matrices}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}A, const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}B)
+\begin{DoxyCompactList}\small\item\em Умножает две матрицы \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{matrix_8c_a5a633165d7617b31fa4ba0d0fc7b8447}{transpose\+\_\+matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix)
+\begin{DoxyCompactList}\small\item\em Транспонирует матрицу \end{DoxyCompactList}\item 
+\mbox{\hyperlink{config_8h_a6086999cc771f9c65e3a09dbcb382107}{MATRIX\+\_\+\+TYPE}} \mbox{\hyperlink{matrix_8c_a80b1953b59b06977a9459581eb8b1605}{determinant}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix)
+\begin{DoxyCompactList}\small\item\em Вычисляет детерминант квадратной матрицы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{matrix_8c_a686c5488cbc4ff0282332e85330b5b4b}\label{matrix_8c_a686c5488cbc4ff0282332e85330b5b4b} 
+\index{matrix.c@{matrix.c}!add\_matrices@{add\_matrices}}
+\index{add\_matrices@{add\_matrices}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{add\_matrices()}{add\_matrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} add\+\_\+matrices (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{B }\end{DoxyParamCaption})}
+
+
+
+Складывает две матрицы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & Указатель на первую матрицу \\
+\hline
+{\em B} & Указатель на вторую матрицу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на новую матрицу — результат сложения, либо NULL в случае ошибки 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a434254404b00b33c5d35dbfd0694e6d9}\label{matrix_8c_a434254404b00b33c5d35dbfd0694e6d9} 
+\index{matrix.c@{matrix.c}!copy\_matrix@{copy\_matrix}}
+\index{copy\_matrix@{copy\_matrix}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{copy\_matrix()}{copy\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} copy\+\_\+matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{source }\end{DoxyParamCaption})}
+
+
+
+Копирует матрицу 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source} & Указатель на исходную матрицу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на копию матрицы или NULL в случае ошибки 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a68f143172ca254d74db01fecfd510436}\label{matrix_8c_a68f143172ca254d74db01fecfd510436} 
+\index{matrix.c@{matrix.c}!create\_matrix@{create\_matrix}}
+\index{create\_matrix@{create\_matrix}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{create\_matrix()}{create\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} create\+\_\+matrix (\begin{DoxyParamCaption}\item[{int}]{rows,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Создает новую матрицу с заданными размерами 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rows} & Количество строк \\
+\hline
+{\em cols} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на созданную матрицу или NULL в случае ошибки 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a80b1953b59b06977a9459581eb8b1605}\label{matrix_8c_a80b1953b59b06977a9459581eb8b1605} 
+\index{matrix.c@{matrix.c}!determinant@{determinant}}
+\index{determinant@{determinant}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{determinant()}{determinant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{config_8h_a6086999cc771f9c65e3a09dbcb382107}{MATRIX\+\_\+\+TYPE}} determinant (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Вычисляет детерминант квадратной матрицы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на квадратную матрицу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Значение детерминанта матрицы 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a3d02d88d9c14615366e3c61a6755339e}\label{matrix_8c_a3d02d88d9c14615366e3c61a6755339e} 
+\index{matrix.c@{matrix.c}!free\_matrix@{free\_matrix}}
+\index{free\_matrix@{free\_matrix}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{free\_matrix()}{free\_matrix()}}
+{\footnotesize\ttfamily void free\+\_\+matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Освобождает память, выделенную под матрицу 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+\end{DoxyParams}
+\Hypertarget{matrix_8c_a7faf574eeeec6da353ea06cafd08cd3c}\label{matrix_8c_a7faf574eeeec6da353ea06cafd08cd3c} 
+\index{matrix.c@{matrix.c}!load\_matrix\_from\_file@{load\_matrix\_from\_file}}
+\index{load\_matrix\_from\_file@{load\_matrix\_from\_file}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{load\_matrix\_from\_file()}{load\_matrix\_from\_file()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} load\+\_\+matrix\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Загружает матрицу из текстового файла 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на загруженную матрицу или NULL в случае ошибки 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a284692b924ed9435ebe878a822b16cef}\label{matrix_8c_a284692b924ed9435ebe878a822b16cef} 
+\index{matrix.c@{matrix.c}!multiply\_matrices@{multiply\_matrices}}
+\index{multiply\_matrices@{multiply\_matrices}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{multiply\_matrices()}{multiply\_matrices()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} multiply\+\_\+matrices (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{A,  }\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{B }\end{DoxyParamCaption})}
+
+
+
+Умножает две матрицы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em A} & Указатель на первую матрицу \\
+\hline
+{\em B} & Указатель на вторую матрицу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на новую матрицу — результат умножения, либо NULL в случае ошибки 
+\end{DoxyReturn}
+\Hypertarget{matrix_8c_a5a633165d7617b31fa4ba0d0fc7b8447}\label{matrix_8c_a5a633165d7617b31fa4ba0d0fc7b8447} 
+\index{matrix.c@{matrix.c}!transpose\_matrix@{transpose\_matrix}}
+\index{transpose\_matrix@{transpose\_matrix}!matrix.c@{matrix.c}}
+\doxysubsubsection{\texorpdfstring{transpose\_matrix()}{transpose\_matrix()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*} transpose\+\_\+matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Транспонирует матрицу 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Указатель на новую транспонированную матрицу, либо NULL в случае ошибки 
+\end{DoxyReturn}

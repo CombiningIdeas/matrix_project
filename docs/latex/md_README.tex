@@ -1,0 +1,106 @@
+\chapter{документация}
+\hypertarget{md_README}{}\label{md_README}\index{документация@{документация}}
+\label{md_README_autotoc_md2}%
+\Hypertarget{md_README_autotoc_md2}%
+ \hypertarget{md_README_autotoc_md3}{}\doxysection{\texorpdfstring{Сборка и запуск проекта}{Сборка и запуск проекта}}\label{md_README_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Сборка и запуск основной программы
+\item Cборка и запуск тестов
+\end{DoxyItemize}
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md5}{}\doxysubsection{\texorpdfstring{Сборка и запуск основной программы}{Сборка и запуск основной программы}}\label{md_README_autotoc_md5}
+Компиляция {\bfseries{основной программы}}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+
+
+Запуск основной программы\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{build/package/matrix\_main}
+
+\end{DoxyCode}
+
+
+Если нужно пересобрать проект, то используем команду\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ rebuild}
+
+\end{DoxyCode}
+
+
+Почистить проект от объектных \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.o файлов\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ clean}
+
+\end{DoxyCode}
+
+
+Полная очистка проекта от исполняемых(бинарных) файлов и т объектных\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ all-\/clean}
+
+\end{DoxyCode}
+
+
+\DoxyHorRuler{0}
+\hypertarget{md_README_autotoc_md7}{}\doxysubsection{\texorpdfstring{Сборка и запуск тестов}{Сборка и запуск тестов}}\label{md_README_autotoc_md7}
+Компиляция {\bfseries{тестов}}\+:
+
+Поменять местами компиляцию в Makefile, затем в \doxylink{main_8c}{main.\+c} заменить функцию int \doxylink{main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} на int project\+\_\+main(). А далее все та же команда\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+
+
+Запуск тестов\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{build/tests/matrix\_tests}
+
+\end{DoxyCode}
+
+
+Если нужно пересобрать проект, то используем команду\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ rebuild}
+
+\end{DoxyCode}
+
+
+Почистить проект от объектных \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}.o файлов\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ clean}
+
+\end{DoxyCode}
+
+
+Полная очистка проекта от исполняемых(бинарных) файлов и т объектных\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make\ all-\/clean}
+
+\end{DoxyCode}
+ 

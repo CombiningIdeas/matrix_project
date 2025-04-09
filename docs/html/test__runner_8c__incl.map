@@ -1,0 +1,11 @@
+<map id="tests/test_runner.c" name="tests/test_runner.c">
+<area shape="rect" id="Node000001" title="Основной файл для запуска всех тестов в проекте." alt="" coords="195,5,338,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,115,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,33,107,77,106,72,233,28"/>
+<area shape="rect" id="Node000003" href="$tests__matrix_8h.html" title="Заголовочный файл для тестирования функций работы с матрицами." alt="" coords="139,79,255,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="257,33,220,71,216,67,253,29"/>
+<area shape="rect" id="Node000004" href="$tests__output_8h.html" title="Заголовочный файл для тестирования функций вывода матриц." alt="" coords="280,79,395,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="280,29,318,67,314,71,276,33"/>
+<area shape="rect" id="Node000005" href="$tests__main_8h.html" title="Заголовочный файл для тестирования главной программы." alt="" coords="419,79,525,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="301,28,427,72,425,77,299,33"/>
+</map>

@@ -1,0 +1,17 @@
+<map id="include/config.h" name="include/config.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для конфигурации проекта" alt="" coords="303,5,427,31"/>
+<area shape="rect" id="Node000002" href="$matrix_8c.html" title=" " alt="" coords="5,152,152,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="331,39,103,154,100,150,329,35"/>
+<area shape="rect" id="Node000003" href="$matrix_8h.html" title="Заголовочный файл для работы с матрицами" alt="" coords="292,79,439,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="368,44,368,79,363,79,363,44"/>
+<area shape="rect" id="Node000005" href="$output_8c.html" title=" " alt="" coords="640,152,784,177"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="407,34,686,149,684,154,404,38"/>
+<area shape="poly" id="edge4_Node000003_Node000002" title=" " alt="" coords="307,110,126,154,124,149,306,105"/>
+<area shape="rect" id="Node000004" href="$main_8c.html" title=" " alt="" coords="177,152,266,177"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="331,112,246,154,244,149,329,108"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="435,104,656,149,655,155,434,109"/>
+<area shape="rect" id="Node000006" href="$tests__matrix_8c.html" title=" " alt="" coords="290,152,441,177"/>
+<area shape="poly" id="edge6_Node000003_Node000006" title=" " alt="" coords="368,118,368,152,363,152,363,118"/>
+<area shape="rect" id="Node000007" href="$tests__output_8c.html" title=" " alt="" coords="465,152,615,177"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="407,107,512,149,510,154,405,112"/>
+</map>

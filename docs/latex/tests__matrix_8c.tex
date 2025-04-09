@@ -1,0 +1,124 @@
+\doxysection{tests/tests\+\_\+matrix.c File Reference}
+\hypertarget{tests__matrix_8c}{}\label{tests__matrix_8c}\index{tests/tests\_matrix.c@{tests/tests\_matrix.c}}
+{\ttfamily \#include $<$CUnit/\+Basic.\+h$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}../src/main.\+h"{}}\newline
+{\ttfamily \#include "{}../src/matrix/matrix.\+h"{}}\newline
+{\ttfamily \#include "{}tests\+\_\+matrix.\+h"{}}\newline
+Include dependency graph for tests\+\_\+matrix.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__matrix_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__matrix_8c_a8b5507c87946b82e9c79f67b2a0496c9}{test\+\_\+create\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Тест для создания матрицы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a7b8c183eaceda9c181bb37ba79ef588a}{test\+\_\+free\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Тест для освобождения памяти. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a06c39e29d134018b92a22188a6b9f5e0}{test\+\_\+copy\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Тест для копирования матрицы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a5ff3a179d4caa923b3c27a419367bfe8}{test\+\_\+add\+\_\+matrices}} ()
+\begin{DoxyCompactList}\small\item\em Тест для сложения матриц. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_ad98e87af40062761616a7583e5981f54}{test\+\_\+multiply\+\_\+matrices}} ()
+\begin{DoxyCompactList}\small\item\em Тест для умножения матриц. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_a7facfbb16a81f3245311a5d443c92a3b}{test\+\_\+transpose\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Тест для транспонирования матрицы. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__matrix_8c_acdc153e69038935c8beb5e1796a59701}{test\+\_\+determinant}} ()
+\begin{DoxyCompactList}\small\item\em Тест для вычисления детерминанта матрицы. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tests__matrix_8c_a474a0dc014d27204ac8fd9a5c081fa72}{main\+\_\+tests\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция для выполнения всех тестов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tests__matrix_8c_a474a0dc014d27204ac8fd9a5c081fa72}\label{tests__matrix_8c_a474a0dc014d27204ac8fd9a5c081fa72} 
+\index{tests\_matrix.c@{tests\_matrix.c}!main\_tests\_matrix@{main\_tests\_matrix}}
+\index{main\_tests\_matrix@{main\_tests\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{main\_tests\_matrix()}{main\_tests\_matrix()}}
+{\footnotesize\ttfamily int main\+\_\+tests\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция для выполнения всех тестов. 
+
+Эта функция запускает все тесты, связанные с работой с матрицами. Она выполняет серию проверок для различных операций с матрицами.
+
+\begin{DoxyReturn}{Returns}
+0 в случае успешного выполнения всех тестов, в противном случае возвращает код ошибки. 
+\end{DoxyReturn}
+\Hypertarget{tests__matrix_8c_a5ff3a179d4caa923b3c27a419367bfe8}\label{tests__matrix_8c_a5ff3a179d4caa923b3c27a419367bfe8} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_add\_matrices@{test\_add\_matrices}}
+\index{test\_add\_matrices@{test\_add\_matrices}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_add\_matrices()}{test\_add\_matrices()}}
+{\footnotesize\ttfamily void test\+\_\+add\+\_\+matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для сложения матриц. 
+
+Эта функция проверяет работу функции {\ttfamily add\+\_\+matrices}, которая выполняет операцию сложения двух матриц. Мы проверяем, что результат сложения матриц соответствует ожидаемым значениям. \Hypertarget{tests__matrix_8c_a06c39e29d134018b92a22188a6b9f5e0}\label{tests__matrix_8c_a06c39e29d134018b92a22188a6b9f5e0} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_copy\_matrix@{test\_copy\_matrix}}
+\index{test\_copy\_matrix@{test\_copy\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_copy\_matrix()}{test\_copy\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+copy\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для копирования матрицы. 
+
+Эта функция проверяет корректность работы функции {\ttfamily copy\+\_\+matrix}, которая создает копию исходной матрицы. Мы проверяем, что значения в копии матрицы совпадают с оригинальными значениями. \Hypertarget{tests__matrix_8c_a8b5507c87946b82e9c79f67b2a0496c9}\label{tests__matrix_8c_a8b5507c87946b82e9c79f67b2a0496c9} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_create\_matrix@{test\_create\_matrix}}
+\index{test\_create\_matrix@{test\_create\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_create\_matrix()}{test\_create\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+create\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для создания матрицы. 
+
+Эта функция проверяет корректность работы функции {\ttfamily create\+\_\+matrix}, которая создает матрицу заданных размеров. Мы проверяем, что матрица создана и имеет правильные размеры. \Hypertarget{tests__matrix_8c_acdc153e69038935c8beb5e1796a59701}\label{tests__matrix_8c_acdc153e69038935c8beb5e1796a59701} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_determinant@{test\_determinant}}
+\index{test\_determinant@{test\_determinant}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_determinant()}{test\_determinant()}}
+{\footnotesize\ttfamily void test\+\_\+determinant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для вычисления детерминанта матрицы. 
+
+Эта функция проверяет работу функции {\ttfamily determinant}, которая вычисляет детерминант матрицы. Мы проверяем, что вычисленное значение детерминанта соответствует ожидаемому результату. \Hypertarget{tests__matrix_8c_a7b8c183eaceda9c181bb37ba79ef588a}\label{tests__matrix_8c_a7b8c183eaceda9c181bb37ba79ef588a} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_free\_matrix@{test\_free\_matrix}}
+\index{test\_free\_matrix@{test\_free\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_free\_matrix()}{test\_free\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+free\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для освобождения памяти. 
+
+Эта функция проверяет работу функции {\ttfamily free\+\_\+matrix}, которая освобождает память, занятую матрицей. Мы удостоверяемся, что освобождение памяти не вызывает сбоев. \Hypertarget{tests__matrix_8c_ad98e87af40062761616a7583e5981f54}\label{tests__matrix_8c_ad98e87af40062761616a7583e5981f54} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_multiply\_matrices@{test\_multiply\_matrices}}
+\index{test\_multiply\_matrices@{test\_multiply\_matrices}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_multiply\_matrices()}{test\_multiply\_matrices()}}
+{\footnotesize\ttfamily void test\+\_\+multiply\+\_\+matrices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для умножения матриц. 
+
+Эта функция проверяет работу функции {\ttfamily multiply\+\_\+matrices}, которая выполняет операцию умножения двух матриц. Мы проверяем, что результат умножения матриц соответствует ожидаемым значениям. \Hypertarget{tests__matrix_8c_a7facfbb16a81f3245311a5d443c92a3b}\label{tests__matrix_8c_a7facfbb16a81f3245311a5d443c92a3b} 
+\index{tests\_matrix.c@{tests\_matrix.c}!test\_transpose\_matrix@{test\_transpose\_matrix}}
+\index{test\_transpose\_matrix@{test\_transpose\_matrix}!tests\_matrix.c@{tests\_matrix.c}}
+\doxysubsubsection{\texorpdfstring{test\_transpose\_matrix()}{test\_transpose\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+transpose\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для транспонирования матрицы. 
+
+Эта функция проверяет работу функции {\ttfamily transpose\+\_\+matrix}, которая выполняет операцию транспонирования матрицы. Мы проверяем, что элементы матрицы после транспонирования находятся в правильных местах. 

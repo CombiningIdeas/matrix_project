@@ -1,0 +1,7 @@
+<map id="src/output/output.h" name="src/output/output.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для функций вывода и сохранения матрицы" alt="" coords="49,5,195,31"/>
+<area shape="rect" id="Node000002" href="$main_8c.html" title=" " alt="" coords="5,79,95,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,43,64,80,60,77,98,39"/>
+<area shape="rect" id="Node000003" href="$tests__output_8c.html" title=" " alt="" coords="119,79,269,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="146,39,184,77,180,80,142,43"/>
+</map>

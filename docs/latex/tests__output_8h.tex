@@ -1,0 +1,93 @@
+\doxysection{tests/tests\+\_\+output.h File Reference}
+\hypertarget{tests__output_8h}{}\label{tests__output_8h}\index{tests/tests\_output.h@{tests/tests\_output.h}}
+
+
+Заголовочный файл для тестирования функций вывода матриц.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{tests__output_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__output_8h_aea684d6f8bd9e35fa92cefa269fff512}{test\+\_\+print\+\_\+matrix}} ()
+\begin{DoxyCompactList}\small\item\em Тест для вывода матрицы в консоль. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8h_af7bc7134d3a587a121b318e971a41dcf}{test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Тест для сохранения матрицы в файл. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8h_add94f692d6a19df07a0d4cc855b59cf5}{test\+\_\+save\+\_\+empty\+\_\+matrix\+\_\+to\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Тест для сохранения пустой матрицы в файл. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__output_8h_ac390f0e232e24d716eb727fe0592a929}{test\+\_\+save\+\_\+single\+\_\+element\+\_\+matrix\+\_\+to\+\_\+file}} ()
+\begin{DoxyCompactList}\small\item\em Тест для сохранения матрицы с одним элементом в файл. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tests__output_8h_a46c4bf59b7904ba0bd85d5895f4fc8d9}{main\+\_\+tests\+\_\+output}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция для выполнения всех тестов вывода. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл для тестирования функций вывода матриц. 
+
+Этот файл содержит объявления функций, предназначенных для тестирования функций вывода матриц в консоль и сохранения их в файлы. Тестируется корректность работы с матрицами разных размеров, включая пустые матрицы и матрицы с одним элементом.
+
+Тесты выполняются с использованием стандартных функций для работы с файлами и консолью. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tests__output_8h_a46c4bf59b7904ba0bd85d5895f4fc8d9}\label{tests__output_8h_a46c4bf59b7904ba0bd85d5895f4fc8d9} 
+\index{tests\_output.h@{tests\_output.h}!main\_tests\_output@{main\_tests\_output}}
+\index{main\_tests\_output@{main\_tests\_output}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{main\_tests\_output()}{main\_tests\_output()}}
+{\footnotesize\ttfamily int main\+\_\+tests\+\_\+output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция для выполнения всех тестов вывода. 
+
+Эта функция запускает все тесты, связанные с выводом матриц и их сохранением в файлы. Она выполняет серию проверок для различных типов матриц.
+
+\begin{DoxyReturn}{Returns}
+0 в случае успешного выполнения всех тестов, в противном случае возвращает код ошибки. 
+\end{DoxyReturn}
+\Hypertarget{tests__output_8h_aea684d6f8bd9e35fa92cefa269fff512}\label{tests__output_8h_aea684d6f8bd9e35fa92cefa269fff512} 
+\index{tests\_output.h@{tests\_output.h}!test\_print\_matrix@{test\_print\_matrix}}
+\index{test\_print\_matrix@{test\_print\_matrix}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{test\_print\_matrix()}{test\_print\_matrix()}}
+{\footnotesize\ttfamily void test\+\_\+print\+\_\+matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для вывода матрицы в консоль. 
+
+Эта функция проверяет корректность вызова функции {\ttfamily print\+\_\+matrix}, которая выводит матрицу в консоль. Мы не проверяем точность вывода в консоль, а лишь гарантируем, что функция не вызывает сбоев при выводе. \Hypertarget{tests__output_8h_add94f692d6a19df07a0d4cc855b59cf5}\label{tests__output_8h_add94f692d6a19df07a0d4cc855b59cf5} 
+\index{tests\_output.h@{tests\_output.h}!test\_save\_empty\_matrix\_to\_file@{test\_save\_empty\_matrix\_to\_file}}
+\index{test\_save\_empty\_matrix\_to\_file@{test\_save\_empty\_matrix\_to\_file}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{test\_save\_empty\_matrix\_to\_file()}{test\_save\_empty\_matrix\_to\_file()}}
+{\footnotesize\ttfamily void test\+\_\+save\+\_\+empty\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для сохранения пустой матрицы в файл. 
+
+Эта функция проверяет, что функция {\ttfamily save\+\_\+matrix\+\_\+to\+\_\+file} корректно обрабатывает пустую матрицу и возвращает ошибку при попытке сохранить такую матрицу. \Hypertarget{tests__output_8h_af7bc7134d3a587a121b318e971a41dcf}\label{tests__output_8h_af7bc7134d3a587a121b318e971a41dcf} 
+\index{tests\_output.h@{tests\_output.h}!test\_save\_matrix\_to\_file@{test\_save\_matrix\_to\_file}}
+\index{test\_save\_matrix\_to\_file@{test\_save\_matrix\_to\_file}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{test\_save\_matrix\_to\_file()}{test\_save\_matrix\_to\_file()}}
+{\footnotesize\ttfamily void test\+\_\+save\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для сохранения матрицы в файл. 
+
+Эта функция проверяет корректность работы функции {\ttfamily save\+\_\+matrix\+\_\+to\+\_\+file}, которая сохраняет матрицу в файл. Мы проверяем создание файла и его содержание, чтобы удостовериться, что сохраненные данные соответствуют матрице. \Hypertarget{tests__output_8h_ac390f0e232e24d716eb727fe0592a929}\label{tests__output_8h_ac390f0e232e24d716eb727fe0592a929} 
+\index{tests\_output.h@{tests\_output.h}!test\_save\_single\_element\_matrix\_to\_file@{test\_save\_single\_element\_matrix\_to\_file}}
+\index{test\_save\_single\_element\_matrix\_to\_file@{test\_save\_single\_element\_matrix\_to\_file}!tests\_output.h@{tests\_output.h}}
+\doxysubsubsection{\texorpdfstring{test\_save\_single\_element\_matrix\_to\_file()}{test\_save\_single\_element\_matrix\_to\_file()}}
+{\footnotesize\ttfamily void test\+\_\+save\+\_\+single\+\_\+element\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест для сохранения матрицы с одним элементом в файл. 
+
+Эта функция проверяет работу функции {\ttfamily save\+\_\+matrix\+\_\+to\+\_\+file} при сохранении матрицы размером 1x1. Мы проверяем корректность сохраненных данных и их соответствие ожиданиям. 

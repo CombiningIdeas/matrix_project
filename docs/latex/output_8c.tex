@@ -1,0 +1,57 @@
+\doxysection{src/output/output.c File Reference}
+\hypertarget{output_8c}{}\label{output_8c}\index{src/output/output.c@{src/output/output.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}../matrix/matrix.\+h"{}}\newline
+{\ttfamily \#include "{}../../include/config.\+h"{}}\newline
+Include dependency graph for output.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{output_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{output_8c_a327b21aa863cac776876bf40507224b0}{print\+\_\+matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix)
+\begin{DoxyCompactList}\small\item\em Выводит матрицу в консоль \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{output_8c_a86e28ec2f3e7ae0abb275b0d27c54e9a}{save\+\_\+matrix\+\_\+to\+\_\+file}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix, const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Сохраняет матрицу в текстовый файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{output_8c_a327b21aa863cac776876bf40507224b0}\label{output_8c_a327b21aa863cac776876bf40507224b0} 
+\index{output.c@{output.c}!print\_matrix@{print\_matrix}}
+\index{print\_matrix@{print\_matrix}!output.c@{output.c}}
+\doxysubsubsection{\texorpdfstring{print\_matrix()}{print\_matrix()}}
+{\footnotesize\ttfamily void print\+\_\+matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Выводит матрицу в консоль 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+\end{DoxyParams}
+\Hypertarget{output_8c_a86e28ec2f3e7ae0abb275b0d27c54e9a}\label{output_8c_a86e28ec2f3e7ae0abb275b0d27c54e9a} 
+\index{output.c@{output.c}!save\_matrix\_to\_file@{save\_matrix\_to\_file}}
+\index{save\_matrix\_to\_file@{save\_matrix\_to\_file}!output.c@{output.c}}
+\doxysubsubsection{\texorpdfstring{save\_matrix\_to\_file()}{save\_matrix\_to\_file()}}
+{\footnotesize\ttfamily int save\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Сохраняет матрицу в текстовый файл 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+{\em filename} & Имя файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 в случае успеха, -\/1 в случае ошибки 
+\end{DoxyReturn}

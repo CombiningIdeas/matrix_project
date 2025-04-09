@@ -1,0 +1,93 @@
+\doxysection{src/main.h File Reference}
+\hypertarget{main_8h}{}\label{main_8h}\index{src/main.h@{src/main.h}}
+
+
+Заголовочный файл основной программы  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Объявление главной функции \doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} ~\newline
+ Проверяем в функции открылись ли файлы в которых лежат матрицы, а затем решаем исходное выражение, через описанные в данном проекте функции. ~\newline
+ В конце выводим результат в консоль и чистим память. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл основной программы 
+
+Этот файл содержит объявление главной функции {\ttfamily \doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}}, которая является точкой входа в программу. В функции {\ttfamily \doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}} выполняется несколько ключевых операций\+:
+\begin{DoxyItemize}
+\item Открытие файлов, содержащих матрицы.
+\item Вычисление результата выражения с использованием функций работы с матрицами, определенных в проекте.
+\item Вывод результата в консоль.
+\item Освобождение выделенной памяти.
+\end{DoxyItemize}
+
+Этот файл играет важную роль в запуске основного алгоритма программы.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{main_8c}{main.\+c} ~\newline
+ \doxylink{tests__main_8h}{tests\+\_\+main.\+h} -\/\texorpdfstring{$>$}{>} (там эта функция (\doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()}) будет называться так при пересборке проекта для тестов)main\+\_\+project() 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.h@{main.h}!main@{main}}
+\index{main@{main}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Объявление главной функции \doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} ~\newline
+ Проверяем в функции открылись ли файлы в которых лежат матрицы, а затем решаем исходное выражение, через описанные в данном проекте функции. ~\newline
+ В конце выводим результат в консоль и чистим память. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em return\+\_\+value} & -\/ возвращаемое значение. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращаем или ошибку -\/1 или успешное завершение программы 0.
+\end{DoxyReturn}
+Объявление главной функции \doxylink{main_8h_ae66f6b31b5ad750f1fe042a706a4e3d4}{main()} ~\newline
+ Проверяем в функции открылись ли файлы в которых лежат матрицы, а затем решаем исходное выражение, через описанные в данном проекте функции. ~\newline
+ В конце выводим результат в консоль и чистим память.
+
+Эта функция инициализирует систему CUnit, добавляет тесты для разных компонентов программы, запускает их и выводит результаты. В случае ошибок в тестах выводится сообщение с кодом ошибки.
+
+Функция выполняет следующие действия\+:
+\begin{DoxyEnumerate}
+\item Инициализирует реестр CUnit с помощью {\ttfamily CU\+\_\+initialize\+\_\+registry()}.
+\item Добавляет наборы тестов для матриц, вывода и основного кода с помощью {\ttfamily CU\+\_\+add\+\_\+suite()}.
+\item Запускает тесты для каждой категории\+:
+\begin{DoxyItemize}
+\item Тесты матриц
+\item Тесты вывода
+\item Тесты \doxylink{main_8c}{main.\+c}
+\end{DoxyItemize}
+\item Выводит ошибки, если они возникают при выполнении тестов.
+\item Настроены различные уровни вывода\+:
+\begin{DoxyItemize}
+\item Подробный вывод ({\ttfamily CU\+\_\+\+BRM\+\_\+\+VERBOSE})
+\item Стандартный вывод ({\ttfamily CU\+\_\+\+BRM\+\_\+\+NORMAL})
+\item Минимальный вывод ({\ttfamily CU\+\_\+\+BRM\+\_\+\+SILENT})
+\end{DoxyItemize}
+\item Запускает все тесты с помощью {\ttfamily CU\+\_\+basic\+\_\+run\+\_\+tests()} и выводит их результаты.
+\item Очищает реестр и выводит итоговый статус.
+\end{DoxyEnumerate}
+
+\begin{DoxyReturn}{Returns}
+Возвращает 0, если все тесты прошли успешно, иначе возвращает 1. 
+\end{DoxyReturn}

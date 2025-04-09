@@ -1,0 +1,62 @@
+\doxysection{tests/tests\+\_\+main.c File Reference}
+\hypertarget{tests__main_8c}{}\label{tests__main_8c}\index{tests/tests\_main.c@{tests/tests\_main.c}}
+{\ttfamily \#include $<$CUnit/\+Basic.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include "{}../src/main.\+h"{}}\newline
+{\ttfamily \#include "{}tests\+\_\+main.\+h"{}}\newline
+Include dependency graph for tests\+\_\+main.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests__main_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tests__main_8c_a7a2e17fa0356e77e1346e1a5c065281b}{test\+\_\+main\+\_\+success}} ()
+\begin{DoxyCompactList}\small\item\em Тест успешной загрузки матриц и выполнения вычислений. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tests__main_8c_a075bc839be614935cc9130cadbc52717}{test\+\_\+main\+\_\+failure}} ()
+\begin{DoxyCompactList}\small\item\em Тест на ошибку при отсутствии одного из файлов. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{tests__main_8c_ae88a8659610df3eeb7202a68aa42b748}{main\+\_\+tests\+\_\+main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция для запуска тестов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{tests__main_8c_ae88a8659610df3eeb7202a68aa42b748}\label{tests__main_8c_ae88a8659610df3eeb7202a68aa42b748} 
+\index{tests\_main.c@{tests\_main.c}!main\_tests\_main@{main\_tests\_main}}
+\index{main\_tests\_main@{main\_tests\_main}!tests\_main.c@{tests\_main.c}}
+\doxysubsubsection{\texorpdfstring{main\_tests\_main()}{main\_tests\_main()}}
+{\footnotesize\ttfamily int main\+\_\+tests\+\_\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция для запуска тестов. 
+
+Эта функция инициализирует и запускает тесты, определенные для основного компонента программы. Она добавляет тесты в тестовый набор и сообщает о результате выполнения тестов.
+
+\begin{DoxyReturn}{Returns}
+0 в случае успешного выполнения тестов, в противном случае возвращает код ошибки. 
+\end{DoxyReturn}
+\Hypertarget{tests__main_8c_a075bc839be614935cc9130cadbc52717}\label{tests__main_8c_a075bc839be614935cc9130cadbc52717} 
+\index{tests\_main.c@{tests\_main.c}!test\_main\_failure@{test\_main\_failure}}
+\index{test\_main\_failure@{test\_main\_failure}!tests\_main.c@{tests\_main.c}}
+\doxysubsubsection{\texorpdfstring{test\_main\_failure()}{test\_main\_failure()}}
+{\footnotesize\ttfamily void test\+\_\+main\+\_\+failure (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест на ошибку при отсутствии одного из файлов. 
+
+Эта функция выполняет тест, который симулирует ошибку при отсутствии одного из файлов (например, файл A.\+txt). В случае отсутствия файла программа должна вернуть ошибку. \Hypertarget{tests__main_8c_a7a2e17fa0356e77e1346e1a5c065281b}\label{tests__main_8c_a7a2e17fa0356e77e1346e1a5c065281b} 
+\index{tests\_main.c@{tests\_main.c}!test\_main\_success@{test\_main\_success}}
+\index{test\_main\_success@{test\_main\_success}!tests\_main.c@{tests\_main.c}}
+\doxysubsubsection{\texorpdfstring{test\_main\_success()}{test\_main\_success()}}
+{\footnotesize\ttfamily void test\+\_\+main\+\_\+success (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Тест успешной загрузки матриц и выполнения вычислений. 
+
+Эта функция выполняет тест, который проверяет успешную загрузку всех необходимых файлов и выполнение вычислений в программе без ошибок. 

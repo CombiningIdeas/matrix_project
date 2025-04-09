@@ -1,0 +1,75 @@
+\doxysection{src/output/output.h File Reference}
+\hypertarget{output_8h}{}\label{output_8h}\index{src/output/output.h@{src/output/output.h}}
+
+
+Заголовочный файл для функций вывода и сохранения матрицы  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{output_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{output_8h_a327b21aa863cac776876bf40507224b0}{print\+\_\+matrix}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix)
+\begin{DoxyCompactList}\small\item\em Выводит матрицу в консоль \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{output_8h_a86e28ec2f3e7ae0abb275b0d27c54e9a}{save\+\_\+matrix\+\_\+to\+\_\+file}} (const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}matrix, const char \texorpdfstring{$\ast$}{*}filename)
+\begin{DoxyCompactList}\small\item\em Сохраняет матрицу в текстовый файл \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Заголовочный файл для функций вывода и сохранения матрицы 
+
+Этот файл объявляет функции для вывода матрицы в консоль и её сохранения в файл. Он предоставляет интерфейсы для отладки и сохранения результатов работы с матрицами.
+
+Включает функции\+:
+\begin{DoxyItemize}
+\item {\ttfamily print\+\_\+matrix} — выводит матрицу в консоль.
+\item {\ttfamily save\+\_\+matrix\+\_\+to\+\_\+file} — сохраняет матрицу в текстовый файл.
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{output_8c}{output.\+c} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{output_8h_a327b21aa863cac776876bf40507224b0}\label{output_8h_a327b21aa863cac776876bf40507224b0} 
+\index{output.h@{output.h}!print\_matrix@{print\_matrix}}
+\index{print\_matrix@{print\_matrix}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{print\_matrix()}{print\_matrix()}}
+{\footnotesize\ttfamily void print\+\_\+matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix }\end{DoxyParamCaption})}
+
+
+
+Выводит матрицу в консоль 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+\end{DoxyParams}
+\Hypertarget{output_8h_a86e28ec2f3e7ae0abb275b0d27c54e9a}\label{output_8h_a86e28ec2f3e7ae0abb275b0d27c54e9a} 
+\index{output.h@{output.h}!save\_matrix\_to\_file@{save\_matrix\_to\_file}}
+\index{save\_matrix\_to\_file@{save\_matrix\_to\_file}!output.h@{output.h}}
+\doxysubsubsection{\texorpdfstring{save\_matrix\_to\_file()}{save\_matrix\_to\_file()}}
+{\footnotesize\ttfamily int save\+\_\+matrix\+\_\+to\+\_\+file (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structMatrix}{Matrix}} \texorpdfstring{$\ast$}{*}}]{matrix,  }\item[{const char \texorpdfstring{$\ast$}{*}}]{filename }\end{DoxyParamCaption})}
+
+
+
+Сохраняет матрицу в текстовый файл 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Указатель на матрицу \\
+\hline
+{\em filename} & Имя файла \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 в случае успеха, -\/1 в случае ошибки 
+\end{DoxyReturn}

@@ -1,0 +1,72 @@
+\doxysection{Matrix Struct Reference}
+\hypertarget{structMatrix}{}\label{structMatrix}\index{Matrix@{Matrix}}
+
+
+Структура, представляющая матрицу  
+
+
+
+
+{\ttfamily \#include $<$matrix.\+h$>$}
+
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structMatrix_a994b1578e9a64d5cc3c4d0b11d7532a9}{rows}}
+\begin{DoxyCompactList}\small\item\em Количество строк в матрице \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{structMatrix_a2067cc7ed367cc427cd869b3e1074ad7}{cols}}
+\begin{DoxyCompactList}\small\item\em Количество столбцов в матрице \end{DoxyCompactList}\item 
+\mbox{\hyperlink{config_8h_a6086999cc771f9c65e3a09dbcb382107}{MATRIX\+\_\+\+TYPE}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{structMatrix_aa60abc2340f5b27b7f9c25b3d52d3115}{data}}
+\begin{DoxyCompactList}\small\item\em Данные матрицы, элементы матрицы, представленные в виде двумерного массива \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Структура, представляющая матрицу 
+
+Эта структура используется для представления матрицы, включающей данные в виде двумерного массива. Она содержит информацию о размерах матрицы (количестве строк и столбцов) и указатель на массив данных, который хранит элементы матрицы.
+
+Поля\+:
+\begin{DoxyItemize}
+\item {\ttfamily rows} — количество строк в матрице.
+\item {\ttfamily cols} — количество столбцов в матрице.
+\item {\ttfamily data} — указатель на двумерный массив, содержащий элементы матрицы.
+\end{DoxyItemize}
+
+Тип данных {\ttfamily MATRIX\+\_\+\+TYPE} может быть определён как любой числовой тип, например, {\ttfamily float}, {\ttfamily double} или другой. 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{structMatrix_a2067cc7ed367cc427cd869b3e1074ad7}\label{structMatrix_a2067cc7ed367cc427cd869b3e1074ad7} 
+\index{Matrix@{Matrix}!cols@{cols}}
+\index{cols@{cols}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{cols}{cols}}
+{\footnotesize\ttfamily int Matrix\+::cols}
+
+
+
+Количество столбцов в матрице 
+
+\Hypertarget{structMatrix_aa60abc2340f5b27b7f9c25b3d52d3115}\label{structMatrix_aa60abc2340f5b27b7f9c25b3d52d3115} 
+\index{Matrix@{Matrix}!data@{data}}
+\index{data@{data}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \mbox{\hyperlink{config_8h_a6086999cc771f9c65e3a09dbcb382107}{MATRIX\+\_\+\+TYPE}}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Matrix\+::data}
+
+
+
+Данные матрицы, элементы матрицы, представленные в виде двумерного массива 
+
+\Hypertarget{structMatrix_a994b1578e9a64d5cc3c4d0b11d7532a9}\label{structMatrix_a994b1578e9a64d5cc3c4d0b11d7532a9} 
+\index{Matrix@{Matrix}!rows@{rows}}
+\index{rows@{rows}!Matrix@{Matrix}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily int Matrix\+::rows}
+
+
+
+Количество строк в матрице 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/matrix/\mbox{\hyperlink{matrix_8h}{matrix.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,15 @@
+<map id="src/main.c" name="src/main.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="209,5,298,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,72,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,33,86,77,84,72,218,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="97,79,167,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,33,165,74,162,69,232,28"/>
+<area shape="rect" id="Node000004" href="$matrix_8h.html" title="Заголовочный файл для работы с матрицами" alt="" coords="191,79,315,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="256,31,256,65,251,65,251,31"/>
+<area shape="rect" id="Node000006" href="$output_8h.html" title="Заголовочный файл для функций вывода и сохранения матрицы" alt="" coords="340,79,463,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="278,28,366,70,364,75,276,33"/>
+<area shape="rect" id="Node000007" href="$main_8h.html" title="Заголовочный файл основной программы" alt="" coords="487,79,553,104"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="297,28,474,75,473,80,295,33"/>
+<area shape="rect" id="Node000005" href="$config_8h.html" title="Заголовочный файл для конфигурации проекта" alt="" coords="179,152,327,177"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="256,104,256,138,251,138,251,104"/>
+</map>
